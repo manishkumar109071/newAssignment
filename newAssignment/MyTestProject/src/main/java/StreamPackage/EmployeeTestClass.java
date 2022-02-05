@@ -14,7 +14,7 @@ public class EmployeeTestClass {
 				new Employee("1001", "Manish", "India", "9953895446", (double) 90000, 2015),
 				new Employee("1002", "Rahul", "India", "7878787878", (double) 30000, 2016),
 				new Employee("1003", "Sushant", "India", "4545454545", (double) 80000, 2017),
-				new Employee("1004", "Mohan", "India", "6553454555", (double) 70000, 2018));
+				new Employee("1004", "Mohan", "India", "6553454555", (double) 70000, 2021));
 
 		Optional<Employee> secondHightestSalariedEmp = employeeList.stream()
 				.sorted(Comparator.comparingDouble(Employee::getEmployeeSalary).reversed()).skip(1).findFirst();
